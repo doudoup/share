@@ -13,10 +13,37 @@
     <script type="text/javascript" src="files/bag-Gucci.js"></script>
     <script>
         // var mydata = JSON.parse(data);
-        console.log(bagGucciData);
+        function init(){
+            var container = document.getElementById("js-content");
+            console.log(bagGucciData);
+            for(var i = 0; i<bagGucciData.length; i++) {
+
+                var d = bagGucciData[i];
+                console.log(d);
+
+                var item = document.createElement('div');
+                item.style.width="46%";
+                item.style.marginBottom="20px";
+                item.style.background="#ffffff";
+                item.style.borderRadius="4px";
+                item.style.padding="6px";
+
+                container.append(item);
+
+                var img = document.createElement('img');
+                img.src = d.images[0];
+                img.style.width = "100%"
+                item.append(img);
+
+                var p = document.createElement('p');
+                p.innerHTML = d.name;
+                item.append(p);
+
+            }
+        }
     </script>
 </head>
-<body>
+<body onload="init()">
     <header class="header">
         <p class="header-title">二豆的美物分享</p>
         <p class="ab-text-center"><i class="iconfont icon-Radish header-des-icon"></i>一盆绿植的惬意, 一只好物的满足~</p>
@@ -24,8 +51,8 @@
             <img src="images/index/code.jpg" alt="" style="width: 150px;">
         </div>
     </header>
-    <div class="content">
-        <div style="width: 46%;margin-bottom: 20px;background: #ffffff;border-radius: 4px;padding: 6px;">
+    <div id="js-content" class="content">
+        <!-- <div style="width: 46%;margin-bottom: 20px;background: #ffffff;border-radius: 4px;padding: 6px;">
             <img src="images/index/code.jpg" alt=""  style="width: 100%;">
             <p>我是标题,啦啦啦,嘿嘿</p>
         </div>
@@ -36,7 +63,7 @@
         <div style="width: 46%;margin-bottom: 20px;background: #ffffff;border-radius: 4px;padding: 6px;">
             <img src="images/index/code.jpg" alt=""  style="width: 100%;">
             <p>我是标题,啦啦啦,嘿嘿</p>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
