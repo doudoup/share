@@ -1,0 +1,178 @@
+
+body,
+div,
+dl,
+dt,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+form,
+p,
+textarea,
+a,
+i {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', 'Segoe UI', 'Microsoft YaHei', '微软雅黑', sans-serif !important;
+  font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1;
+  color: #313131;
+  background-color: #F9F7ED;
+}
+
+i {
+  display: inline-block;
+
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ol,
+ul,
+li {
+  outline: none;
+  list-style: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+.clearfloat {
+  zoom: 1;
+}
+
+.clearfloat::after {
+  content: '';
+
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+body::-webkit-scrollbar-track,
+.ab-scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+
+  background-color: #f6f6f6;
+}
+
+body::-webkit-scrollbar,
+.ab-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+
+  background-color: #f6f6f6;
+}
+
+body::-webkit-scrollbar-thumb,
+.ab-scroll::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 10px;
+
+  background-color: #e5e5e5;
+}
+
+.ab-scroll-bg::-webkit-scrollbar-track {
+  border-radius: 10px;
+
+  background-color: #f6f6f6;
+}
+
+.ab-scroll-bg::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+
+  background-color: #f6f6f6;
+}
+
+.ab-scroll-bg::-webkit-scrollbar-thumb {
+  width: 16px;
+  border-radius: 10px;
+
+  background-color: #e5e5e5;
+}
+
+/* 文字对齐方式 */
+.ab-text-left {
+  text-align: left;
+}
+
+.ab-text-right {
+  text-align: right;
+}
+
+.ab-text-center {
+  text-align: center;
+}
+
+.ab-text-justify {
+  text-align: justify;
+}
+
+.ab-text-nowrap {
+  white-space: nowrap;
+}
+
+.ab-ellipsis {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+img {
+  border: none;
+
+  vertical-align: middle;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #313131;
+}
+
+a:disabled,
+button:disabled {
+  border: #d2d2d2;
+
+  color: #fff;
+  background-color: #d2d2d2;
+}
+
+input:disabled {
+  color: #bcbcbc;
+}
+
+code {
+  position: relative;
+
+  padding: 12px;
+  border-radius: 4px;
+
+  background: #f5f7fa;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
